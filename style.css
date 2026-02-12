@@ -63,23 +63,21 @@ body{
   padding:6px 10px;
   border-radius:6px;
   font-size:14px;
-
-  /* плавность */
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
 }
 
-/* ✅ ИНВЕРСИЯ */
+/* ✅ инверсия кнопки "Сайт школы" */
 .topbar-school a:hover{
   background: var(--white);
   color: var(--red);
   border-color: var(--red);
 }
 
-/* КОНТЕНТ */
+/* КОНТЕНТ (чтобы подвал всегда был снизу) */
 .container{
   flex:1;
   max-width:1200px;
-  margin:auto;
+  margin:0 auto;
   padding:20px;
   width:100%;
 }
@@ -133,7 +131,7 @@ body{
 
 .footer-inner{
   max-width:1200px;
-  margin:auto;
+  margin:0 auto;
   display:flex;
   justify-content:space-between;
   flex-wrap:wrap;
@@ -153,6 +151,7 @@ body{
   align-items:center;
   justify-content:center;
   z-index:9999;
+  padding: 24px;
 }
 
 .lightbox.open{
@@ -163,6 +162,7 @@ body{
   max-width:90vw;
   max-height:90vh;
   border-radius:10px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
 }
 
 .lightbox-close{
@@ -194,5 +194,9 @@ body{
   .footer-inner{
     justify-content:center;
     text-align:center;
+  }
+
+  .card img{
+    height:200px;
   }
 }
