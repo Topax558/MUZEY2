@@ -18,7 +18,7 @@
   </nav>
 
   <div class="topbar-school">
-    <a href="https://shkolamoskva.ru/predprof/shkola-%E2%84%96-1356/" target="_blank">
+    <a href="https://shkolamoskva.ru/predprof/shkola-%E2%84%96-1356/" target="_blank" rel="noopener">
       Сайт школы
     </a>
   </div>
@@ -27,7 +27,7 @@
 <main class="container">
   <h2 class="section-title">Документы и публикации</h2>
 
-  <!-- ДОКУМЕНТЫ заполняются через script-github.js -->
+  <!-- Заполняется из script.js -->
   <section class="grid" id="docsGrid"></section>
 </main>
 
@@ -39,14 +39,13 @@
 </footer>
 
 <!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lightboxClose">✕</button>
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">✕</button>
   <div class="lightbox-inner">
     <img id="lightboxImg" alt="">
   </div>
 </div>
 
-<!-- 🔴 ВАЖНО: GitHub-версия скрипта -->
-<script src="script-github.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
